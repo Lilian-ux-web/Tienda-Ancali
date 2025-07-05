@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancali - Tu hogar, tu inversión</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f3f0; color: #333; }
+    header { background: #004AAD; color: white; padding: 1em 2em; text-align: center; }
+    nav { background: #003366; display: flex; justify-content: center; gap: 2em; padding: 0.5em; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; }
+    .hero { background: url('https://i.imgur.com/z6PZkde.jpg') center/cover no-repeat; color: white; padding: 5em 2em; text-align: center; }
+    .hero h1 { font-size: 2.5em; animation: fadeIn 2s ease-in-out; }
+    .productos, .creditos, .nosotros, .contacto, .testimonios { background: white; margin-bottom: 1em; border-radius: 10px; padding: 2em; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .producto { display: flex; gap: 1em; margin-top: 1em; }
+    .producto img { width: 150px; border-radius: 10px; }
+    form { display: flex; flex-direction: column; gap: 1em; }
+    input, select, textarea { padding: 0.5em; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #004AAD; color: white; padding: 0.7em; border: none; border-radius: 5px; cursor: pointer; }
+    footer { background: #003366; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    .testimonial { background: #f0f0f0; border-left: 5px solid #004AAD; padding: 1em; margin: 1em 0; font-style: italic; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ancali</h1>
+    <p>Tu hogar, tu inversión</p>
+  </header>
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#creditos">Créditos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Convierte tu casa en el hogar de tus sueños</h1>
+    <p>Con productos de calidad y asesoría financiera personalizada</p>
+    <a href="https://wa.me/5217710000000" target="_blank"><button>¡Contáctanos por WhatsApp!</button></a>
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Catálogo interactivo</h2>
+    <div class="producto">
+      <img src="https://i.imgur.com/vYmhA1z.jpg" alt="Colchón">
+      <div>
+        <h3>Colchón Restonic Matrimonial</h3>
+        <p>Soporte ortopédico y confort premium.</p>
+        <p>Contado: $4,500 | A crédito: $5,800</p>
+      </div>
+    </div>
+    <div class="producto">
+      <img src="https://i.imgur.com/FRnGpC1.jpg" alt="Batería de cocina">
+      <div>
+        <h3>Batería Inter Cuisine Acero Inoxidable</h3>
+        <p>Incluye 10 piezas con tapas de vidrio.</p>
+        <p>Contado: $1,800 | A crédito: $2,400</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="creditos" class="creditos">
+    <h2>Cómo funciona nuestro crédito</h2>
+    <ol>
+      <li>Elige tu producto ideal</li>
+      <li>Solicita tu crédito</li>
+      <li>Recíbelo a domicilio</li>
+      <li>Paga cómodamente por semana</li>
+    </ol>
+    <button onclick="window.location.href='#contacto'">Solicita tu crédito ahora</button>
+  </section>
+
+  <section id="nosotros" class="nosotros">
+    <h2>Quiénes somos</h2>
+    <p><strong>Misión:</strong> Ayudar a cubrir necesidades de inversión personales y de microempresas.</p>
+    <p><strong>Visión:</strong> Ser la empresa que más apoyos otorga en Hidalgo.</p>
+    <p><strong>Valores:</strong> Responsabilidad, Honestidad, Formalidad, Compromiso.</p>
+  </section>
+
+  <section id="testimonios" class="testimonios">
+    <h2>Lo que opinan nuestros clientes</h2>
+    <div class="testimonial">“Gracias a Ancali renové mi cocina sin pagar todo de golpe.” — Martha, Tizayuca</div>
+    <div class="testimonial">“El asesor financiero me ayudó a elegir lo que realmente necesitaba. ¡Gracias Ancali!” — José, Pachuca</div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form action="https://formsubmit.co/tuemail@correo.com" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <select name="necesidad" required>
+        <option value="">¿Qué necesitas?</option>
+        <option value="productos">Productos</option>
+        <option value="credito">Crédito</option>
+        <option value="asesoria">Asesoría</option>
+      </select>
+      <textarea name="mensaje" placeholder="Mensaje" rows="4"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>WhatsApp: <a href="https://wa.me/5217710000000">771-000-0000</a><br>
+    Teléfono: 771-000-0000<br>
+    Ubicación: Tizayuca, Hidalgo<br>
+    Horario: Lunes a sábado, 10:00 am a 6:00 pm</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ancali. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
